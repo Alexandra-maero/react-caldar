@@ -26,7 +26,7 @@ class App extends Component {
   //Add Boiler
   addBoiler = ({typeId, maintaince_rate, hour_maintaince_cost, hour_eventual_cost, maintaince_completed}) => {
     const newBoil = {
-      number: nextId(),
+      id: nextId(),
       typeId,
       maintaince_rate,
       hour_maintaince_cost,

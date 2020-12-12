@@ -13,7 +13,7 @@
       "maintaince_rate":"quarterly",
       "hour_maintaince_cost":"$7.91",
       "hour_eventual_cost":"$16.05",
-      "maintaince_completed": true
+      "maintaince_completed": false
     },
     {
       "id":3,
@@ -29,7 +29,7 @@
       "maintaince_rate":"monthly",
       "hour_maintaince_cost":"$22.84",
       "hour_eventual_cost":"$45.96",
-      "maintaince_completed": true
+      "maintaince_completed": false
     },
     {
       "id":5,

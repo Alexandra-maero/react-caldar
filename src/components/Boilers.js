@@ -7,7 +7,11 @@ class Boilers extends Component {
     render (){
     //console.log(this.props.boilers)
     return this.props.boilers.map((boil) => (
-    <Items key={boil.id} boil={boil} markComplete={this.props.markComplete} delBoiler={this.props.delBoiler} />
+    <Items 
+      key={boil.id} 
+      boil={boil} 
+      markComplete={this.props.markComplete} 
+      delBoiler={this.props.delBoiler} />
     ))
   }
 }
