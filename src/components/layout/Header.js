@@ -26,17 +26,18 @@ const ulStyle = {
 const liStyle =  {
     float: 'left',
     display: 'block',
-    width: '11%',
+    width: '17%',
     color: 'rgb(19,84,76)',
     fontWeight: 800,
     fontSize: 12,
     textAlign: 'center',
-    padding: '16px 16px',
+    padding: '20px 16px',
 }
 const headerStyle = {
     background: 'rgb(239,232,216)',
     color: 'rgb(19,84,76)',
     textAlign: 'center',
+    paddingTop: '20px',
 }
 
 export default Header

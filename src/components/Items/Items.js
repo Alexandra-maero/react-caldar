@@ -18,7 +18,7 @@ export class Items extends Component {
         return {
             float: 'left',
             display: 'block',
-            width: '11%',
+            width: '17%',
             color: 'rgb(0,0,0)',
             fontWeight: 600,
             fontSize: 13,
