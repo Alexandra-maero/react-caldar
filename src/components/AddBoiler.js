@@ -1,12 +1,12 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import './AddBoiler.css'
 
 export class AddBoiler extends Component {
     state = {
         typeId:'',
         maintaince_rate:'',
         hour_maintaince_cost:'',
-        hour_eventual_cost:'',
-        maintaince_completed: ''
+        hour_eventual_cost:''
     }
 
     onChange = (e) => this.setState({ [e.target.name]: e.target.value })
@@ -17,8 +17,7 @@ export class AddBoiler extends Component {
             typeId:'',
             maintaince_rate:'',
             hour_maintaince_cost:'',
-            hour_eventual_cost:'',
-            maintaince_completed: '' 
+            hour_eventual_cost:''
         });
     }
     render() {
@@ -41,7 +40,7 @@ export class AddBoiler extends Component {
                     onChange={this.onChange}
                 />
                 <input 
-                    type="number" 
+                    type="text, number" 
                     name="hour_maintaince_cost" 
                     style={{flex: '1', padding: '3px'}} 
                     placeholder="Add Hour Maintaince Cost..." 
@@ -49,19 +48,11 @@ export class AddBoiler extends Component {
                     onChange={this.onChange}
                 />
                 <input 
-                    type="number" 
+                    type="text, number" 
                     name="hour_eventual_cost" 
                     style={{flex: '1', padding: '3px'}} 
                     placeholder="Add Hour Eventual Cost..." 
                     value={this.state.hour_eventual_cost}
-                    onChange={this.onChange}
-                />
-                <input 
-                    type="text" 
-                    name="maintaince_completed" 
-                    style={{flex: '1', padding: '3px'}} 
-                    placeholder="Add Status of Maintaince..." 
-                    value={this.state.maintaince_completed}
                     onChange={this.onChange}
                 />
                 <input 

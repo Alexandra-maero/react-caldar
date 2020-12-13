@@ -9,9 +9,10 @@ class Boilers extends Component {
     return this.props.boilers.map((boil) => (
     <Items 
       key={boil.id} 
-      boil={boil} 
-      markComplete={this.props.markComplete} 
-      delBoiler={this.props.delBoiler} />
+      boil={boil}  
+      delBoiler={this.props.delBoiler} 
+      updateBoiler={this.props.updateBoiler}
+      />
     ))
   }
 }
