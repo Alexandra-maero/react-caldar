@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Header from './components/layout/Header';
 import Boilers from './components/Boilers';
-import AddBoilers from './components/AddBoiler';
+import AddBoilers from './components/AddBoiler/AddBoiler';
 import mockBoilers from './mocks/mockBoilers.json';
 import './App.css';
 
