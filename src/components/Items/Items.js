@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import './Items.css';
+import { BiPencil } from 'react-icons/bi';
+import { FcCancel } from 'react-icons/fc';
+import { AiOutlineCheckCircle } from 'react-icons/ai';
+import { GoTrashcan } from 'react-icons/go';
 
 export class Items extends Component {
     state = {...this.props.boil, isEditing: false};
@@ -77,8 +81,8 @@ export class Items extends Component {
                         onChange={this.onChange}
                     ></input>,
                     <div>
-                        <button onClick={this.toggleEdit} style={Btn}>Cancel</button>
-                        <button onClick={this.saveChanges} style={Btn}>Save Changes</button>
+                        <button onClick={this.toggleEdit} style={Btn}><FcCancel /></button>
+                        <button onClick={this.saveChanges} style={Btn}><AiOutlineCheckCircle/></button>
                     </div>
                     </ul>
             )
@@ -91,10 +95,10 @@ export class Items extends Component {
             <li style={this.liStyle()}>{ this.props.boil.hour_maintaince_cost }</li>
             <li style={this.liStyle()}>{ this.props.boil.hour_eventual_cost }</li>
             <div>
-                <button onClick={this.props.delBoiler.bind(this, id)} style={Btn}>Delete</button>
+                <button onClick={this.props.delBoiler.bind(this, id)} style={Btn}><GoTrashcan/></button>
                 <button 
                 onClick={this.toggleEdit} 
-                style={Btn}>EDIT</button>
+                style={Btn}><BiPencil/></button>
             </div>    
         </ul>
         )
