@@ -30,6 +30,7 @@ export class AddBoiler extends Component {
                     placeholder="Add Type ID..." 
                     value={this.state.typeId}
                     onChange={this.onChange}
+                    required
                 />
                 <input className="inputStyle"
                     type="text" 
@@ -38,22 +39,25 @@ export class AddBoiler extends Component {
                     placeholder="Add Maintaince Rate:..." 
                     value={this.state.maintaince_rate}
                     onChange={this.onChange}
+                    required
                 />
                 <input className="inputStyle"
-                    type="text, number" 
+                    type="number" 
                     name="hour_maintaince_cost" 
                     style={{flex: '1', padding: '3px'}} 
                     placeholder="Add Hour Maintaince Cost..." 
                     value={this.state.hour_maintaince_cost}
                     onChange={this.onChange}
+                    required
                 />
                 <input className="inputStyle"
-                    type="text, number" 
+                    type="number" 
                     name="hour_eventual_cost" 
                     style={{flex: '1', padding: '3px'}} 
                     placeholder="Add Hour Eventual Cost..." 
                     value={this.state.hour_eventual_cost}
                     onChange={this.onChange}
+                    required
                 />
                 <input className="btnSubmit"
                     type="submit" 

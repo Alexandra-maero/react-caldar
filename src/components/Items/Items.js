@@ -70,14 +70,14 @@ export class Items extends Component {
                         type="number" 
                         name="hour_maintaince_cost" 
                         placeholder=" Add Hour Maintaince Cost"
-                        value={this.state.hour_maintaince_cost}
+                        value={`$ ${this.state.hour_maintaince_cost}`}
                         onChange={this.onChange}
                     ></input>,
                     <input className="inputStyleEdt"
                         type="number" 
                         name="hour_eventual_cost" 
                         placeholder=" Add Hour Eventual Cost"
-                        value={this.state.hour_eventual_cost}
+                        value={`$ ${this.state.hour_eventual_cost}`}
                         onChange={this.onChange}
                     ></input>,
                     <div>
@@ -92,8 +92,8 @@ export class Items extends Component {
             <li style={this.liStyle()}>{ this.props.boil.id }</li>
             <li style={this.liStyle()}>{ this.props.boil.typeId }</li>
             <li style={this.liStyle()}>{ this.props.boil.maintaince_rate }</li>
-            <li style={this.liStyle()}>{ this.props.boil.hour_maintaince_cost }</li>
-            <li style={this.liStyle()}>{ this.props.boil.hour_eventual_cost }</li>
+            <li style={this.liStyle()}>${ this.props.boil.hour_maintaince_cost }</li>
+            <li style={this.liStyle()}>${ this.props.boil.hour_eventual_cost }</li>
             <div>
                 <button onClick={this.props.delBoiler.bind(this, id)} style={Btn}><GoTrashcan/></button>
                 <button 
