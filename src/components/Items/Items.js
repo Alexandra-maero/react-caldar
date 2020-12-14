@@ -56,28 +56,28 @@ export class Items extends Component {
                         type="text" 
                         name="typeId" 
                         placeholder=" Add Type Id"
-                        value={this.state.typeId}
+                        value={this.state.typeId.isRequired}
                         onChange={this.onChange}
                     ></input>,
                     <input className="inputStyleEdt"
                         type="text" 
                         name="maintaince_rate" 
                         placeholder=" Add Maintaince Rate"
-                        value={this.state.maintaince_rate}
+                        value={this.state.maintaince_rate.isRequired}
                         onChange={this.onChange}
                     ></input>,
                     <input className="inputStyleEdt"
                         type="number" 
                         name="hour_maintaince_cost" 
                         placeholder=" Add Hour Maintaince Cost"
-                        value={`$ ${this.state.hour_maintaince_cost}`}
+                        value={this.state.hour_maintaince_cost.isRequired}
                         onChange={this.onChange}
                     ></input>,
                     <input className="inputStyleEdt"
                         type="number" 
                         name="hour_eventual_cost" 
                         placeholder=" Add Hour Eventual Cost"
-                        value={`$ ${this.state.hour_eventual_cost}`}
+                        value={this.state.hour_eventual_cost.isRequired}
                         onChange={this.onChange}
                     ></input>,
                     <div>
